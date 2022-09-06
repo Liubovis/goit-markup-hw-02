@@ -1,6 +1,6 @@
 :root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
   --accent-text-color: #2196F3;
   --white-text-color: #fff;
   --white-opacity-text-color: rgba(255, 255, 255, 0.6);
@@ -13,44 +13,17 @@
   --logo-color: #000;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
+ul,
+ol {
+  list-style: none;
 }
 
-ul,
-ol,
 a {
   text-decoration: none;
 }
@@ -58,9 +31,10 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   line-height: 1.7;
   letter-spacing: 0.03em;
+  background-color: var(--primary-background-color);
 }
 
 .container {
@@ -79,15 +53,19 @@ body {
 }
 
 .nav-link {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
 }
+
 
 .logo-nav {
   color: var(--logo-color);
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  
 }
 
 .logo-accent {
@@ -96,7 +74,7 @@ body {
 
 .contact-link[href^="mailto"],
 .contact-link[href^="tel"] {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .nav-link:hover,
@@ -116,6 +94,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+  text-transform: uppercase;
 }
 
 .hero-btn {
@@ -123,12 +102,13 @@ body {
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+  font-weight: 700;
 
   background-color: var(--accent-background-color);
   border: none;
   border-radius: 4px;
 
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .benefits {
@@ -146,8 +126,7 @@ body {
 }
 
 .benefits-desc {
-  line-height: 1.7;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .services {
@@ -172,13 +151,15 @@ body {
 .team-position {
   font-size: 16px;
   line-height: 1.2;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
 }
 
 /* Portfolio */
 .portfolio-btn {
   font-size: 16px;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
 
   background-color: var(--secondary-background-color);
   border: none;
@@ -197,10 +178,11 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  font-weight: 700;
 }
 
 .portfolio-work-desc {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -221,6 +203,10 @@ body {
 
 .logo-footer {
   color: var(--white-text-color);
+}
+
+.address {
+  font-style: normal;
 }
 
 .address-link {
