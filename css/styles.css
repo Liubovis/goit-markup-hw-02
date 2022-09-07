@@ -75,6 +75,7 @@ body {
 .contact-link[href^="mailto"],
 .contact-link[href^="tel"] {
   color: var(--primary-text-color);
+  font-weight: 500;
 }
 
 .nav-link:hover,
@@ -91,6 +92,7 @@ body {
 
 .hero-title {
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
@@ -99,10 +101,10 @@ body {
 
 .hero-btn {
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  font-weight: 700;
 
   background-color: var(--accent-background-color);
   border: none;
@@ -121,11 +123,13 @@ body {
 }
 
 .benefits-title {
+  font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .benefits-desc {
+  font-weight: 400;
   color: var(--primary-text-color);
 }
 
@@ -135,6 +139,7 @@ body {
 
 .title {
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
@@ -145,14 +150,15 @@ body {
 
 .team-title {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .team-position {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.2;
   color: var(--primary-text-color);
-  font-weight: 500;
 }
 
 /* Portfolio */
@@ -174,6 +180,10 @@ body {
   background-color: var(--accent-background-color);
 }
 
+.portfolio-work-link {
+  color: var(--secondary-text-color);
+}
+
 .portfolio-work-title {
   font-size: 18px;
   line-height: 2;
@@ -184,6 +194,7 @@ body {
 .portfolio-work-desc {
   color: var(--primary-text-color);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.06em;
 }
@@ -194,15 +205,12 @@ body {
 }
 
 .logo-footer {
-  color: var(--logo-color);
+  color: var(--white-text-color);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.logo-footer {
-  color: var(--white-text-color);
 }
 
 .address {
@@ -210,6 +218,7 @@ body {
 }
 
 .address-link {
+  font-weight: 400;
   color: var(--white-text-color)
 }
 
